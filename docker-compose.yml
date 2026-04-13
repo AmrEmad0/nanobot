@@ -51,6 +51,6 @@ services:
     <<: *common-config
     profiles:
       - cli
-    command: ["onboard"]
+    command: ["status"]
     stdin_open: true
     tty: true
