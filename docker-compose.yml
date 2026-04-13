@@ -17,7 +17,6 @@ services:
   nanobot-gateway:
     container_name: nanobot-gateway
     <<: *common-config
-    entrypoint: ["/bin/sh", "-c"]
     command: ["gateway"]
     environment:
     - NANOBOT_API_KEY=YOUR_API_KEY
