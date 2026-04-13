@@ -2,6 +2,7 @@ x-common-config: &common-config
   build:
     context: .
     dockerfile: Dockerfile
+  user: "0:0"  
   volumes:
     - ~/.nanobot:/home/nanobot/.nanobot
   cap_drop:
