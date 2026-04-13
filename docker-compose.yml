@@ -18,7 +18,7 @@ services:
     container_name: nanobot-gateway
     <<: *common-config
     entrypoint: ["/bin/sh", "-c"]
-    command: ["sleep infinity"]
+    command: ["gateway"]
     environment:
     - NANOBOT_API_KEY=YOUR_API_KEY
     restart: unless-stopped
